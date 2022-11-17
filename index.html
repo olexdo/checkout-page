@@ -1,13 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <title>Checkout Page</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="nav__menu">
+          <button class="back__btn">GO BACK</button>
+          <button class="sign-in__btn">SIGN IN</button>
+        </nav>
+      </header>
+      <main>
+        <form action="" method="post" id="order__form">
+          <article class="order__detailed">
+            <h2 class="visually__hidden">Order detailed information</h2>
+            <div class="order__container">
+              <table class="order__table">
+                <caption>
+                  YOUR ORDER
+                </caption>
+                <tr>
+                  <th>ITEMS</th>
+                  <th>DETAILS</th>
+                  <th>PRICE</th>
+                  <th>DELIVERY</th>
+                </tr>
+                <tr>
+                  <td>2 documents</td>
+                  <td>2 languages</td>
+                  <td>$ 696.06</td>
+                  <td>48 hours<sup>*</sup></td>
+                </tr>
+              </table>
+              <div class="order__buttons">
+                <button class="submit__btn" type="submit">PLACE ORDER</button>
+                <button type="button">PRINT A QUOTE</button>
+              </div>
+            </div>
+            <footer class="order__help" role="contentinfo">
+              <h3>HELP CENTER</h3>
+              <address>
+                <p>
+                  If you need assistance while placing your order, contact one
+                  of our beloved Project Manager by phone or email.
+                </p>
+                <div>
+                  <a href="tel:+971(0)555555">+971 (0) 555 555</a>
+                  <a href="mailto:help@qtest.com">help@qtest.com</a>
+                </div>
+              </address>
+            </footer>
+          </article>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
