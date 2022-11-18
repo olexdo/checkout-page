@@ -163,4 +163,13 @@ button:hover {
   margin-bottom: 10px;
 }
 
+img {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+  color: black;
+}
+
 /*# sourceMappingURL=style.css.map */
