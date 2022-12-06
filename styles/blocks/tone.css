@@ -1,0 +1,26 @@
+.tone {
+}
+.tone__title {
+  margin-bottom: min(3vw, 52px);
+}
+.tone__radio {
+  flex-direction: column;
+}
+.tone__label {
+  width: clamp(200px, 16vw, 280px);
+  height: clamp(60px, 4.8vw, 84px);
+}
+
+@media (min-width: 992px) {
+  .tone__label-container:hover > .tone__icon-friendly {
+    fill: #3b7e0f;
+  }
+
+  .tone__label-container:hover > .tone__icon-pro {
+    fill: #d2081f;
+  }
+
+  .tone__label-container:hover > .tone__icon-media {
+    fill: #0d8a9a;
+  }
+}

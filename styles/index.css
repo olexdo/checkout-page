@@ -1,0 +1,38 @@
+/* Global */
+@import "./fonts.css";
+@import "./variables.css";
+
+/* Blocks */
+@import "blocks/visually-hidden.css";
+@import "blocks/icon.css";
+@import "./blocks/button.css";
+@import "./blocks/link.css";
+@import "./blocks/page.css";
+@import "blocks/header.css";
+@import "./blocks/form.css";
+
+/* Order Section */
+@import "./blocks/order.css";
+@import "./blocks/table.css";
+@import "blocks/help.css";
+
+/* Translate Options */
+@import "./blocks/fieldset.css";
+@import "blocks/doc-type.css";
+@import "blocks/radio.css";
+
+/* upload */
+
+@import "blocks/upload.css";
+
+/* language */
+@import "blocks/language.css";
+@import "./blocks/select.css";
+
+/* Tone */
+@import "blocks/tone.css";
+
+/* Urgency*/
+@import "blocks/urgency.css";
+@import "blocks/range.css";
+@import "./blocks/payment.css";

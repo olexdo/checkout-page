@@ -1,0 +1,15 @@
+.urgency {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.urgency__range {
+  width: 82%;
+  margin: min(2.25vw, 40px) auto clamp(40px, 5.2vw, 90px);
+}
+
+.urgency__help {
+  border: 1px solid var(--border-color);
+}

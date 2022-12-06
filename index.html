@@ -1,356 +1,450 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <title>Checkout Page</title>
-    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <nav class="nav__menu">
-          <button class="back__btn">GO BACK</button>
-          <button class="sign-in__btn">SIGN IN</button>
-        </nav>
+  <body class="page__body">
+    <div class="page__container">
+      <header class="header">
+        <button class="button header__button" type="button">
+          <svg class="icon icon--sm" width="1em" height="1em">
+            <use xlink:href="./images/sprite.svg#left_arrow"></use>
+          </svg>
+          GO BACK
+        </button>
+        <button class="button header__button" type="button">
+          <svg class="icon icon--sm" width="1em" height="1em">
+            <use xlink:href="./images/sprite.svg#user"></use>
+          </svg>
+          SIGN IN
+        </button>
       </header>
-      <main>
-        <form action="" method="post" id="order__form">
-          <section class="order__detailed">
-            <h2 class="visually__hidden">Order detailed information</h2>
-            <div class="order__container">
-              <table class="order__table">
-                <caption>
+      <article class="page__content">
+        <h1 class="visually-hidden">Text translation form of your files</h1>
+        <form action="/" class="form">
+          <footer class="form__order-info">
+            <section class="order form__order">
+              <div class="order__table-field">
+                <h4 class="order__title">
+                  <svg
+                    class="icon icon--dark icon--lg icon--absolute order__icon"
+                    width="2em"
+                    height="2em"
+                  >
+                    <use xlink:href="./images/sprite.svg#order"></use>
+                  </svg>
                   YOUR ORDER
-                </caption>
-                <tr>
-                  <th>ITEMS</th>
-                  <th>DETAILS</th>
-                  <th>PRICE</th>
-                  <th>DELIVERY</th>
-                </tr>
-                <tr>
-                  <td>2 documents</td>
-                  <td>2 languages</td>
-                  <td>$ 696.06</td>
-                  <td>48 hours<sup>*</sup></td>
-                </tr>
-              </table>
-              <div class="order__buttons">
-                <button class="submit__btn" type="submit">PLACE ORDER</button>
-                <button type="button">PRINT A QUOTE</button>
+                </h4>
+                <table class="table order__table">
+                  <tbody class="table__body">
+                    <tr class="table__row">
+                      <th class="table__header">items</th>
+                      <th class="table__header">details</th>
+                      <th class="table__header">price</th>
+                      <th class="table__header">delivery</th>
+                    </tr>
+                    <tr class="table__row">
+                      <td class="table__data">2 documents</td>
+                      <td class="table__data">2 languages</td>
+                      <td class="table__data">$ 696.06</td>
+                      <td class="table__data">
+                        48 hours<sup class="table__sup">*</sup>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </div>
-            <footer class="order__help" role="contentinfo">
-              <h3>HELP CENTER</h3>
-              <address>
-                <p>
-                  If you need assistance while placing your order, contact one
-                  of our beloved Project Manager by phone or email.
-                </p>
-                <div>
-                  <a href="tel:+971(0)555555">+971 (0) 555 555</a>
-                  <a href="mailto:help@qtest.com">help@qtest.com</a>
-                </div>
+              <div class="order__button-group">
+                <button
+                  class="button form__button form__button--submit"
+                  type="submit"
+                >
+                  PLACE ORDER
+                </button>
+                <button class="button form__button form__button--print">
+                  PRINT A QUOTE
+                </button>
+              </div>
+            </section>
+            <section class="help form__order-help">
+              <h4 class="help__title">
+                <svg
+                  class="icon icon--dark icon--lg icon--absolute"
+                  width="2em"
+                  height="2em"
+                >
+                  <use xlink:href="./images/sprite.svg#help"></use>
+                </svg>
+                HELP CENTER
+              </h4>
+              <p class="help__text">
+                If you need assistance while placing your order, contact one of
+                our beloved Project Manager by phone or email.
+              </p>
+              <address class="help__address">
+                <a href="tel:+9710555555" class="link link--no-decor"
+                  >+971 (0) 555 555</a
+                >
+                <a href="mailto:help@qtest.com" class="link link--no-decor"
+                  >help@qtest.com</a
+                >
               </address>
-            </footer>
-          </section>
-          <section class="document__options">
-            <h2 class="visually__hidden">
-              Options for processing your document
-            </h2>
-            <fieldset name="document_type">
-              <legend>SELECT WHAT YOU WANT TO TRANSLATE</legend>
-              <label for="website">
-                <input
-                  type="radio"
-                  name="document_type"
-                  id="website"
-                  value="website"
-                />
-                <div>
-                  <img src="./images/translate_section/website.png" alt="" />
-                  <span>Website</span>
-                </div>
-              </label>
-              <label for="document">
-                <input
-                  type="radio"
-                  name="document_type"
-                  id="document"
-                  value="document"
-                />
-                <div>
-                  <img src="./images/translate_section/document.png" alt="" />
-                  <span>Document</span>
-                </div>
-              </label>
-              <label for="social_account">
-                <input
-                  type="radio"
-                  name="document_type"
-                  id="social_account"
-                  value="social_account"
-                />
-                <div>
-                  <img src="./images/translate_section/social.png" alt="" />
-                  <span>Social Account</span>
-                </div>
-              </label>
-            </fieldset>
-            <fieldset name="upload">
-              <legend>Upload your documents</legend>
-              <label for="file">
+            </section>
+          </footer>
+          <div class="form__container">
+            <section class="doc-type form__doc-type">
+              <h2 class="doc-type__title">SELECT WHAT YOU WANT TO TRANSLATE</h2>
+              <div class="radio">
+                <label class="radio__label doc-type__label">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="document_type"
+                    value="website"
+                    required
+                  />
+                  <div class="radio__label-container doc-type__label-container">
+                    <img
+                      class="doc-type__label-image"
+                      src="./images/website.png"
+                      alt=""
+                    />
+                    <span class="doc-type__label-text">Website</span>
+                  </div>
+                </label>
+                <label class="radio__label doc-type__label">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="document_type"
+                    value="document"
+                  />
+                  <div class="radio__label-container doc-type__label-container">
+                    <img
+                      class="doc-type__label-image"
+                      src="./images/document.png"
+                      alt=""
+                    />
+                    <span class="doc-type__label-text">Document</span>
+                  </div>
+                </label>
+                <label class="radio__label doc-type__label">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="document_type"
+                    value="social"
+                  />
+                  <div class="radio__label-container doc-type__label-container">
+                    <img
+                      class="doc-type__label-image"
+                      src="./images/social.png"
+                      alt=""
+                    />
+                    <span class="doc-type__label-text">Social Account</span>
+                  </div>
+                </label>
+              </div>
+            </section>
+            <section class="upload form__translate-step">
+              <h2 class="form__title upload__title">
+                Upload your documents<em class="form__title-substring"
+                  >(Doc,Docx,Text,Pdf,Markdown)</em
+                >
+              </h2>
+              <label class="upload__label">
                 <input
                   type="file"
                   name="file"
-                  id="file"
+                  class="upload__input-file"
                   accept=".doc,.docx,.txt,.pdf,.md"
                   multiple
                 />
-                <span>Upload a new file</span>
+                <span class="upload__label-container">
+                  <svg
+                    class="icon icon--md upload__icon"
+                    width="1.5em"
+                    height="1.5em"
+                  >
+                    <use xlink:href="./images/sprite.svg#upload"></use>
+                  </svg>
+                  Upload a new file
+                </span>
               </label>
-              <table>
-                <tr>
-                  <th>FILE NAME</th>
-                  <th>FILE SIZE</th>
-                  <th>NUMBER OF WORDS</th>
-                  <th>REMOVE</th>
-                </tr>
-                <tr>
-                  <td>business_operations.docx</td>
-                  <td>78kb</td>
-                  <td>842</td>
-                  <td>
-                    <i><img src="./images/icons/trash.svg" alt="" /></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>business_financial.docx</td>
-                  <td>26kb</td>
-                  <td>2,326</td>
-                  <td>
-                    <i><img src="./images/icons/trash.svg" alt="" /></i>
-                  </td>
-                </tr>
+              <table class="table upload__table">
+                <tbody class="table__body">
+                  <tr class="table__row">
+                    <th class="table__header table__data--lg-cell">
+                      file name
+                    </th>
+                    <th class="table__header">file size</th>
+                    <th class="table__header table__data-words">
+                      number of words
+                    </th>
+                    <th class="table__header table__data--center">remove</th>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__data table__data--lg-cell">
+                      <svg
+                        class="icon icon--sm upload__table-icon"
+                        width="1em"
+                        height="1em"
+                      >
+                        <use
+                          xlink:href="./images/sprite.svg#document"
+                        ></use></svg
+                      >business_operations.docx
+                    </td>
+                    <td class="table__data">78kb</td>
+                    <td class="table__data table__data-words">842</td>
+                    <td class="table__data table__data--center">
+                      <button
+                        type="button"
+                        class="button form__remove-button form__remove-button--rectangle"
+                        aria-label="remove"
+                      >
+                        <svg
+                          class="icon icon--sm form__trash-icon"
+                          width="1em"
+                          height="1em"
+                        >
+                          <use xlink:href="./images/sprite.svg#trash"></use>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__data table__data--lg-cell">
+                      <svg
+                        class="icon icon--sm upload__table-icon"
+                        width="1em"
+                        height="1em"
+                      >
+                        <use
+                          xlink:href="./images/sprite.svg#document"
+                        ></use></svg
+                      >business_financial.docx
+                    </td>
+                    <td class="table__data">26kb</td>
+                    <td class="table__data table__data-words">2,326</td>
+                    <td class="table__data table__data--center">
+                      <button
+                        type="button"
+                        class="button form__remove-button form__remove-button--rectangle"
+                        aria-label="remove"
+                      >
+                        <svg
+                          class="icon icon--sm form__trash-icon"
+                          width="1em"
+                          height="1em"
+                        >
+                          <use xlink:href="./images/sprite.svg#trash"></use>
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
-            </fieldset>
-            <fieldset name="language">
-              <legend>Chose your languages pairings</legend>
-              <div>
-                <span>FROM</span>
-                <select name="from_language" id="from_language">
+            </section>
+            <section class="language form__translate-step">
+              <h2 class="form__title language__title">
+                Chose your languages pairings
+              </h2>
+              <div class="language__select-field">
+                <label class="language__label" for="language-from">from</label>
+                <select
+                  class="select language__select"
+                  name="from_language"
+                  id="language-from"
+                  required
+                >
                   <option value="English">English</option>
-                  <option value="Mandarin_Chinese">Mandarin Chinese</option>
                   <option value="Hindi">Hindi</option>
                   <option value="Italian">Italian</option>
                   <option value="Ukrainian">Ukrainian</option>
                   <option value="Arabic">Arabic</option>
                   <option value="Kurdish">Kurdish</option>
                 </select>
-              </div>
-              <div>
-                <div>
-                  <span>TO</span>
-                  <select name="to_language" id="language_1">
-                    <option value="English">English</option>
-                    <option value="Mandarin_Chinese">Mandarin Chinese</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Ukrainian">Ukrainian</option>
-                    <option value="Arabic">Arabic</option>
-                    <option value="Kurdish">Kurdish</option>
-                  </select>
-                </div>
-                <div>
-                  <select name="to_language" id="language_2">
-                    <option value="English">English</option>
-                    <option value="Mandarin_Chinese">Mandarin Chinese</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Ukrainian">Ukrainian</option>
-                    <option value="Arabic">Arabic</option>
-                    <option value="Kurdish">Kurdish</option>
-                  </select>
-                </div>
-                <i><img src="./images/icons/trash.svg" alt="" /></i>
-                <button type="button">ADD</button>
-              </div>
-            </fieldset>
-            <div>
-              <fielset name="tone">
-                <legend>Select your desired tone</legend>
-                <label for="friendly">
-                  <input type="radio" name="tone" id="friendly" />
-                  <span
-                    ><i
-                      ><img src="./images/icons/chat.svg" alt="" />Friendly /
-                      Casual</i
-                    ></span
-                  >
-                </label>
-                <label for="corporate">
-                  <input type="radio" name="tone" id="corporate" />
-                  <span
-                    ><i><img src="./images/icons/suitcase.svg" alt="" /></i
-                    >Corporate / Pro</span
-                  >
-                </label>
-                <label for="media">
-                  <input type="radio" name="tone" id="media" />
-                  <span
-                    ><i><img src="./images/icons/horn.svg" alt="" /></i>Media /
-                    Formal</span
-                  >
-                </label>
-              </fielset>
-              <fieldset name="urgency">
-                <legend>Tell us how urgent this job is</legend>
-                <div>
-                  <input
-                    type="range"
-                    name="urgency"
-                    id="urgency"
-                    min="0"
-                    max="2"
-                    step="1"
-                    value="1"
-                  />
-                </div>
-                <div>
-                  <span>I got time</span><span>Average</span
-                  ><span>Yesterday</span>
-                </div>
-                <div>
-                  <h3>
-                    <i><img src="./images/icons/info.svg" alt="" /></i>TIMELINE
-                    INFO
-                  </h3>
-                  <p>
-                    Width an AVERAGE timeline set up, our expert translator can
-                    take a reasonable amount of time perfecting your translation
-                  </p>
-                </div>
-              </fieldset>
-            </div>
-          </section>
-          <article class="payment">
-            <h2>Sign up and choose a payment method</h2>
-            <p>Already have an account width us? <a href="">Sign in.</a></p>
-            <fieldset name="personal_information">
-              <label for="full_name">
-                <span>FULL NAME</span>
-                <input type="text" name="full_name" id="full_name" />
-              </label>
-              <label for="email">
-                <span>EMAIL ADDRESS</span>
-                <input type="email" name="email" id="email" />
-              </label>
-              <label for="password">
-                <span>CHOOSE A PASSWORD</span>
-                <input type="password" id="password" />
-              </label>
-            </fieldset>
-            <fieldset name="payment type">
-              <label for="visa_mc">
-                <input
-                  type="radio"
-                  name="payment_type"
-                  id="visa_mc"
-                  value="visa_mc"
-                />
-                <div>
-                  <img src="./images/icons/visa.svg" alt="" />
-                  <img src="./images/icons/mastercard.svg" alt="" />
-                </div>
-              </label>
-              <label for="paypal">
-                <input
-                  type="radio"
-                  name="payment_type"
-                  id="paypal"
-                  value="paypal"
-                />
-                <img src="./images/icons/paypal.svg" alt="" />
-              </label>
-              <label for="amazon">
-                <input
-                  type="radio"
-                  name="payment_type"
-                  id="amazon"
-                  value="amazon"
-                />
-                <img src="./images/icons/amazon.svg" alt="" />
-              </label>
-            </fieldset>
-            <fieldset name="card_information">
-              <label for="card_number">
-                <span>CARD NUMBER</span>
-                <input
-                  type="text"
-                  inputmode="numeric"
-                  name="card_number"
-                  id="card_number"
-                />
-              </label>
-              <label for="expiry_date">
-                <span>EXPIRY DATE</span>
-                <input
-                  type="text"
-                  inputmode="numeric"
-                  name="expiry_date"
-                  id="expiry_date"
-                />
-              </label>
-              <label for="code">
-                <span>CODE</span>
-                <input type="text" inputmode="numeric" name="code" id="code" />
-              </label>
-            </fieldset>
-            <div>
-              <label for="terms">
-                <input type="checkbox" name="terms" id="terms" />
-                <span
-                  >I agree to the
-                  <a href="/" target="_blank">Terms & Conditions</a></span
+                <label
+                  class="language__label language__label--right-text"
+                  for="language-to-1"
+                  >to</label
                 >
-              </label>
-              <button type="submit">PLACE ORDER</button>
-              <button type="button">PRINT A QUOTE</button>
+                <select
+                  class="select language__select"
+                  name="to_language"
+                  id="language-to-1"
+                  required
+                >
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Italian" selected>Italian</option>
+                  <option value="Ukrainian">Ukrainian</option>
+                  <option value="Arabic">Arabic</option>
+                  <option value="Kurdish">Kurdish</option>
+                </select>
+              </div>
+              <div class="language__add-section">
+                <div class="language__added-language">
+                  <select class="select language__select" name="to_language">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Ukrainian" selected>Ukrainian</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Kurdish">Kurdish</option>
+                  </select>
+                  <button
+                    type="button"
+                    class="button form__remove-button"
+                    aria-label="remove"
+                  >
+                    <svg
+                      class="icon icon--sm form__trash-icon"
+                      width="1em"
+                      height="1em"
+                    >
+                      <use xlink:href="./images/sprite.svg#trash"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="button language__add-button" type="button">
+                  <svg
+                    class="icon icon--sm language__add-button-icon"
+                    width="1.5em"
+                    height="1.5em"
+                  >
+                    <use xlink:href="./images/sprite.svg#plus"></use>
+                  </svg>
+                  ADD
+                </button>
+              </div>
+            </section>
+            <div class="form__concat-block">
+              <section class="tone form__tone form__translate-step">
+                <h2 class="form__title tone__title">
+                  Select your desired tone
+                </h2>
+                <div class="radio tone__radio">
+                  <label class="radio__label tone__label">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      name="tone"
+                      value="friendly"
+                      required
+                    />
+                    <span class="radio__label-container tone__label-container">
+                      <svg
+                        class="icon icon--md tone__icon-friendly"
+                        width="1.5em"
+                        height="1.5em"
+                      >
+                        <use xlink:href="./images/sprite.svg#chat"></use>
+                      </svg>
+                      Friendly / Casual
+                    </span>
+                  </label>
+                  <label class="radio__label tone__label">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      name="tone"
+                      value="corporate"
+                    />
+                    <span class="radio__label-container tone__label-container">
+                      <svg
+                        class="icon icon--md tone__icon-pro"
+                        width="1.5em"
+                        height="1.5em"
+                      >
+                        <use xlink:href="./images/sprite.svg#suitcase"></use>
+                      </svg>
+                      Corporate / Pro
+                    </span>
+                  </label>
+                  <label class="radio__label tone__label">
+                    <input
+                      class="radio__input"
+                      type="radio"
+                      name="tone"
+                      value="media"
+                    />
+                    <span class="radio__label-container tone__label-container">
+                      <svg
+                        class="icon icon--md tone__icon-media"
+                        width="1.5em"
+                        height="1.5em"
+                      >
+                        <use xlink:href="./images/sprite.svg#horn"></use>
+                      </svg>
+                      Media / Formal
+                    </span>
+                  </label>
+                </div>
+              </section>
+              <section class="urgency form__urgency form__translate-step">
+                <h2 class="form__title">Tell us how urgent this job is</h2>
+                <div class="range urgency__range">
+                  <input
+                    class="range__input"
+                    type="range"
+                    min="1"
+                    max="3"
+                    step="1"
+                    required
+                  />
+                  <span class="range__value range__value--left"
+                    >i got time</span
+                  >
+                  <span
+                    class="range__value range__value--center range__value--orange"
+                  >
+                    average
+                  </span>
+                  <span class="range__value range__value--right"
+                    >yesterday</span
+                  >
+                </div>
+                <aside class="help urgency__help">
+                  <h4 class="help__title">
+                    <svg
+                      class="icon icon--md icon--dark icon--absolute"
+                      width="1.5em"
+                      height="1.5em"
+                    >
+                      <use xlink:href="./images/sprite.svg#info"></use>
+                    </svg>
+                    TIMELINE INFO
+                  </h4>
+                  <p class="help__text">
+                    Width an
+                    <em class="help__text help__text--accent">AVERAGE</em>
+                    timeline set up, our expert translator can take a reasonable
+                    amount of time perfecting your translation
+                  </p>
+                </aside>
+              </section>
+              <section class="payment form__translate-step">
+                <h2 class="form__title payment__title">
+                  Sign up and choose a payment method
+                </h2>
+                <p class="payment__text">
+                  Already have an account width us?
+                  <a class="link" href="#">Sign in.</a>
+                </p>
+              </section>
             </div>
-          </article>
+          </div>
         </form>
-      </main>
-      <footer>
-        <div>
-          <h3>WHAT WE DO</h3>
-          <p>
-            We provide a full range of language services including content
-            development, document, website and social media accounts
-            translations.
-          </p>
-        </div>
-        <div>
-          <h3>OUR MAIN OFFICE</h3>
-          <address>
-            Dubai,UAE<br />P.O.Box:502735<br />Phone:<a
-              href="tel:+971(0)44278128"
-              >+971 (0) 44278128</a
-            >
-          </address>
-        </div>
-        <div>
-          <h3>CONNECT WIDTH US</h3>
-          <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Linkedin</a></li>
-          </ul>
-        </div>
-      </footer>
+      </article>
     </div>
   </body>
 </html>

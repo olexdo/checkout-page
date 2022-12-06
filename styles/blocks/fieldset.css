@@ -1,0 +1,41 @@
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.fieldset__title {
+  position: relative;
+  padding: 0.5em 0;
+  margin-bottom: 3.5vw;
+  font-size: 1rem;
+  color: var(--text-color-primary);
+}
+
+.fieldset__numbering {
+  position: absolute;
+  top: 50%;
+  left: -1.7em;
+  transform: translate(-50%, -50%);
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  border: 1px solid var(--text-color-primary);
+  border-radius: 50%;
+}
+
+.fieldset__title-substring {
+  font-size: 0.7rem;
+  margin-left: 0.5em;
+}
+
+.fieldset__title--center {
+  text-align: center;
+}
+
+.fieldset__title--underline {
+  box-shadow: 0 1px 0 0 var(--border-color);
+}
+
+.fieldset__title--letter-spacing {
+  letter-spacing: 0.15em;
+}

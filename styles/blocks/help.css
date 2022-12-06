@@ -1,0 +1,26 @@
+.help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: min(1.7vw, 30px) min(2.8vw, 50px) min(1.7vw, 30px) min(5.1vw, 90px);
+}
+.help__title {
+  position: relative;
+  margin: 0;
+  color: var(--text-color-primary);
+}
+
+.help__address {
+  display: flex;
+  gap: 1em;
+}
+
+.help__text {
+  margin: 0.5em 0;
+}
+
+.help__text--accent {
+  font-style: normal;
+  color: #ff8c00;
+}

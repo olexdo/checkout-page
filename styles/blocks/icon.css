@@ -1,0 +1,38 @@
+.icon {
+  fill: var(--text-color-secondary);
+  transition: fill 100ms ease-in;
+}
+
+.icon--sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon--md {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon--lg {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .icon--absolute {
+    position: absolute;
+    top: 50%;
+    left: -1.5rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .icon--absolute {
+    transform: translate(-25%, 25%);
+  }
+}
+
+.icon--dark {
+  fill: var(--text-color-primary);
+}

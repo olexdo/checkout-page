@@ -1,0 +1,75 @@
+.upload {
+  position: relative;
+  margin-bottom: min(7.6vw, 132px);
+}
+
+.upload__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.4em;
+  white-space: nowrap;
+  margin-bottom: min(3.6vw, 64px);
+}
+
+.upload__input-file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.upload__label {
+  display: inline-flex;
+  font-size: 0.87rem;
+  width: clamp(200px, 16vw, 280px);
+  height: clamp(38px, 3.6vw, 62px);
+  margin-bottom: min(2.75vw, 48px);
+}
+
+.upload__label-container {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
+  gap: min(1.5vw, 26px);
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  background-color: var(--bg-primary-light);
+}
+
+.upload__input-file:focus ~ .upload__label-container {
+  border-color: transparent;
+  outline: 2px solid var(--color-dark);
+}
+
+.upload__input-file:focus ~ .upload__label-container > .upload__icon {
+  fill: #3364e1;
+}
+@media (min-width: 992px) {
+  .upload__label-container:hover > .upload__icon {
+    fill: #3364e1;
+  }
+}
+
+.upload__table {
+  padding: min(1.7vw, 30px) 0 min(1.7vw, 30px) min(3.1vw, 54px);
+  border: 2px solid var(--border-color);
+}
+
+.upload__table-icon {
+  margin-right: min(1.5vw, 26px);
+}
+
+@media (max-width: 652px) {
+  .upload__table-icon {
+    display: none;
+  }
+}

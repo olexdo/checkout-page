@@ -1,0 +1,23 @@
+.page {
+  line-height: 1.5;
+  font-family: Aria, sans-serif;
+  font-size: 15px;
+}
+
+.page__container {
+  max-width: 1380px;
+  margin: 0 min(10vw, 180px);
+}
+
+@media (max-width: 767px) {
+  .page__container {
+    margin: 0 3vw;
+  }
+}
+.page__body {
+  margin: 0;
+  font-size: 0.74rem;
+  font-weight: bold;
+  color: var(--text-color-secondary);
+  background-color: var(--bg-primary);
+}
