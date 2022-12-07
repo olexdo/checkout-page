@@ -5,6 +5,7 @@
   border: 1px solid var(--border-color);
   border-radius: 3px;
   color: var(--text-color-secondary);
+  background-color: var(--bg-primary-light);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'\
   %3E%3Cpath d='M0 0l4 4 4-4h-8z' transform='translate(0 2)' fill='%23909193'/%3E%3C/svg%3E"),
     url("data:image/svg+xml,%3Csvg width='16px' height='16px' viewBox='0 0 16 16' version='1.1' \

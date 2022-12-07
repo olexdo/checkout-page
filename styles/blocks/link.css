@@ -1,12 +1,8 @@
 .link {
-  padding: 0.2em 0;
   font-style: normal;
   white-space: nowrap;
   color: var(--text-color-primary);
-}
-
-.link:focus {
-  outline-color: var(--text-color-primary);
+  outline-color: var(--color-dark);
 }
 
 .link:active {

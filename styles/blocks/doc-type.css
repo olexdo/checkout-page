@@ -16,6 +16,12 @@
   box-shadow: 0 1px 0 0 var(--border-color);
 }
 
+@media (max-width: 767px) {
+  .doc-type__radio {
+    flex-direction: column;
+  }
+}
+
 .doc-type__label {
   flex-basis: 31%;
   height: min(14vw, 245px);

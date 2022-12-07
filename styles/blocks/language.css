@@ -73,6 +73,7 @@
   color: var(--text-color-secondary);
   border: 1px solid var(--border-color);
   background-color: var(--bg-primary-light);
+  outline-color: var(--color-dark);
   transition: all 100ms ease;
 }
 

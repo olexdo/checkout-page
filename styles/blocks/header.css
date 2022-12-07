@@ -1,7 +1,12 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: min(6.2vw, 109px) 0;
+}
+
+.header__logo {
+  opacity: 10%;
 }
 .header__button {
   display: flex;
@@ -13,12 +18,8 @@
   color: var(--border-color);
   border: 1px solid var(--border-color);
   background-color: var(--bg-primary);
+  outline-color: var(--color-dark);
   transition: background-color 100ms, color 100ms ease-in;
-}
-
-.header__button:focus {
-  border-color: transparent;
-  outline: 2px solid var(--color-dark);
 }
 
 @media (min-width: 992px) {

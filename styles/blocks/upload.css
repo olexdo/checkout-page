@@ -1,6 +1,5 @@
 .upload {
   position: relative;
-  margin-bottom: min(7.6vw, 132px);
 }
 
 .upload__title {
@@ -12,22 +11,12 @@
   margin-bottom: min(3.6vw, 64px);
 }
 
-.upload__input-file {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .upload__label {
   display: inline-flex;
   font-size: 0.87rem;
   width: clamp(200px, 16vw, 280px);
   height: clamp(38px, 3.6vw, 62px);
-  margin-bottom: min(2.75vw, 48px);
+  margin-bottom: clamp(20px, 2.75vw, 48px);
 }
 
 .upload__label-container {

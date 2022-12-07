@@ -7,9 +7,6 @@
     flex-direction: column;
   }
   .order__button-group {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
     margin-bottom: 1rem;
   }
   .order__icon {
