@@ -67,7 +67,7 @@
 }
 
 .form__button {
-  width: clamp(125px, 11.5vw, 205px);
+  min-width: clamp(125px, 11.5vw, 205px);
   height: clamp(38px, 3.6vw, 62px);
   transition: background-color 100ms, color 100ms ease-in;
 }
@@ -144,6 +144,12 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+}
+
+/* Doc-Type */
+
+.form__doc-type {
+  margin-bottom: min(7.2vw, 125px);
 }
 
 /* Upload */

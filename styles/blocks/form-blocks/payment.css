@@ -76,8 +76,8 @@
   margin-bottom: clamp(30px, 5.6vw, 97px);
 }
 .payment__radio-label {
-  width: clamp(70px, 15.2vw, 265px);
-  height: clamp(50px, 6.9vw, 120px);
+  width: clamp(90px, 15.2vw, 265px);
+  height: clamp(60px, 6.9vw, 120px);
 }
 
 .payment__label-img {

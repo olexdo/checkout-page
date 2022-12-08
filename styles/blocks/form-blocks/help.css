@@ -8,6 +8,7 @@
 .help__title {
   position: relative;
   margin: 0;
+  text-transform: uppercase;
   color: var(--text-color-primary);
 }
 

@@ -29,7 +29,7 @@
 
 @media (max-width: 767px) {
   .icon--absolute {
-    transform: translate(-25%, 25%);
+    transform: translate(-30%, 25%);
   }
 }
 
