@@ -22,15 +22,15 @@
 }
 
 .doc-type__label {
-  flex: 1 31%;
-  min-height: min(14vw, 245px);
+  flex-grow: 1;
+  flex-basis: calc((var(--doc-type-breakpoint) - 100%) * 999);
 }
 
 .doc-type__label-container {
   flex-direction: column;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 430px) {
   .doc-type__label-container:hover > .doc-type__label-image {
     transform: scale(1.05);
     transition: transform 200ms ease;

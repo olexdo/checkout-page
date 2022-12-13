@@ -74,7 +74,14 @@
 
 .form__remove-button {
   padding: 0.5em;
-  outline-color: var(--color-dark);
+}
+
+.form__remove-button:focus{
+  outline: 2px solid var(--color-dark);
+}
+
+.form__remove-button:focus > .form__trash-icon{
+  fill: #8b0000;
 }
 
 .form__remove-button--rectangle {
@@ -85,28 +92,44 @@
   color: var(--text-color-secondary);
   border: 1px solid var(--border-color);
   background-color: var(--bg-primary-light);
-  outline-color: var(--color-dark);
+
+}
+
+.form__button--print:focus {
+  color: #f5f5f5;
+  background-color: var(--color-dark);
+  outline: 2px solid var(--color-dark);
+  transition: background-color 100ms, color 100ms ease-in;
 }
 
 .form__button--submit {
   border: 1px solid #036245;
   color: #f5f5f5;
   background-color: var(--submit-btn-color);
-  outline-color: #036245;
   transition: background-color 100ms ease-in;
 }
 
-@media (min-width: 992px) {
+.form__button--submit:focus {
+  border-color: white;
+  background-color: #036245;
+  outline: 2px solid #036245;
+  transition: background-color 100ms ease-in;
+}
+
+
+@media (min-width: 430px) {
   .form__remove-button:hover > .form__trash-icon {
     fill: #8b0000;
   }
 
   .form__button--submit:hover {
+    border-color: white;
     background-color: #036245;
     transition: background-color 100ms ease-in;
   }
 
   .form__button--print:hover {
+    border-color: white;
     color: #f5f5f5;
     background-color: var(--color-dark);
     transition: background-color 100ms, color 100ms ease-in;

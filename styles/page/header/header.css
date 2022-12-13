@@ -17,13 +17,25 @@
   color: var(--border-color);
   border: 1px solid var(--border-color);
   background-color: var(--bg-primary);
-  outline-color: var(--color-dark);
   transition: background-color 100ms, color 100ms ease-in;
 }
 
-@media (min-width: 992px) {
+.header__button:focus {
+  border-color: white;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  outline: 2px solid var(--color-dark);
+  transition: background-color 100ms, color 100ms ease-in;
+}
+
+.header__button:focus > .icon {
+  fill: var(--color-light);
+  transition: fill 100ms ease-in;
+}
+
+@media (min-width: 430px) {
   .header__button:hover {
-    border-color: transparent;
+    border-color: white;
     color: var(--color-light);
     background-color: var(--color-dark);
     transition: background-color 100ms, color 100ms ease-in;

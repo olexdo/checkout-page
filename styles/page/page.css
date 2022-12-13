@@ -21,6 +21,10 @@
   height: clamp(50px, 6.9vw, 120px);
 }
 
+.page__logo-link{
+  display: block;
+}
+
 /* Header */
 
 .page__header {
@@ -57,5 +61,5 @@
 /* Footer */
 
 .page__footer {
-  max-width: 1742px;
+  width: 100%;
 }

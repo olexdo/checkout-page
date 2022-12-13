@@ -2,7 +2,11 @@
   font-style: normal;
   white-space: nowrap;
   color: var(--text-color-primary);
-  outline-color: var(--color-dark);
+}
+
+.link:focus{
+  outline: 2px solid var(--color-dark);
+  border-radius: 3px;
 }
 
 .link:active {
@@ -17,7 +21,7 @@
   box-shadow: 0 0.2em 0 0 #8b0000;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 430px) {
   .link:hover {
     color: #00008b;
   }

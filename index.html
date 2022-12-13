@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./styles/index.min.css" />
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/index.min.css">
     <title>Text Translation Form</title>
   </head>
   <body class="page__body">
@@ -17,37 +17,32 @@
           <svg class="icon icon--sm" width="1em" height="1em">
             <use xlink:href="./assets/images/sprite.svg#left_arrow"></use>
           </svg>
-          go back
+          Go back
         </button>
         <div class="header__logo" id="logo">
-          <a href="#"
+          <a class="page__logo-link" href="#"
             ><img
-              src="assets/images/logo.png"
-              alt=""
               class="page__logo"
+              src="assets/images/logo.png"
+              alt="logo"
               width="50"
               height="50"
-          /></a>
+          ></a>
         </div>
         <button class="button header__button" type="button">
           <svg class="icon icon--sm" width="1em" height="1em">
             <use xlink:href="./assets/images/sprite.svg#user"></use>
           </svg>
-          sign in
+          Sign in
         </button>
       </header>
       <article class="page__content">
         <h1 class="visually-hidden">Text translation form of your files</h1>
-        <form
-          class="form page__form"
-          action=""
-          method="post"
-          name="text-translation"
-        >
+        <form class="form page__form" name="text-translation">
           <footer class="form__order-info">
             <section class="order form__order">
               <div class="order__table-field">
-                <h4 class="order__title">
+                <h2 class="order__title">
                   <svg
                     class="icon icon--dark icon--lg icon--absolute order__icon"
                     width="2em"
@@ -55,8 +50,8 @@
                   >
                     <use xlink:href="./assets/images/sprite.svg#order"></use>
                   </svg>
-                  your order
-                </h4>
+                  Your order
+                </h2>
                 <table class="table order__table">
                   <tbody class="table__body">
                     <tr class="table__row">
@@ -66,11 +61,11 @@
                       <th class="table__header">delivery</th>
                     </tr>
                     <tr class="table__row">
-                      <td class="table__data">2 documents</td>
-                      <td class="table__data">2 languages</td>
-                      <td class="table__data">$ 696.06</td>
+                      <td class="table__data">2&nbsp;documents</td>
+                      <td class="table__data">2&nbsp;languages</td>
+                      <td class="table__data">$&nbsp;696.06</td>
                       <td class="table__data">
-                        48 hours<sup class="table__sup">*</sup>
+                        48&nbsp;hours<sup class="table__sup">*</sup>
                       </td>
                     </tr>
                   </tbody>
@@ -78,18 +73,18 @@
               </div>
               <div class="form__button-group order__button-group">
                 <button class="button form__button form__button--submit">
-                  place order
+                  Place order
                 </button>
                 <button
                   class="button form__button form__button--print"
                   type="button"
                 >
-                  print a quote
+                  Print a&nbsp;quote
                 </button>
               </div>
             </section>
             <section class="help form__order-help">
-              <h4 class="help__title">
+              <h3 class="help__title">
                 <svg
                   class="icon icon--dark icon--lg icon--absolute"
                   width="2em"
@@ -97,15 +92,15 @@
                 >
                   <use xlink:href="./assets/images/sprite.svg#help"></use>
                 </svg>
-                help center
-              </h4>
+                Help center
+              </h3>
               <p class="help__text">
                 If you need assistance while placing your order, contact one of
-                our beloved Project Manager by phone or email.
+                our beloved Project Manager by&nbsp;phone or&nbsp;email.
               </p>
               <address class="help__address">
                 <a href="tel:+9710555555" class="link link--no-decor"
-                  >+971 (0) 555 555</a
+                  >+971&nbsp;(0)&nbsp;555&nbsp;555</a
                 >
                 <a href="mailto:help@qtest.com" class="link link--no-decor"
                   >help@qtest.com</a
@@ -115,7 +110,9 @@
           </footer>
           <div class="form__container">
             <section class="doc-type form__doc-type">
-              <h2 class="doc-type__title">Select what you want to translate</h2>
+              <h2 class="doc-type__title">
+                Select what you want to&nbsp;translate
+              </h2>
               <div class="radio doc-type__radio">
                 <label class="radio__label doc-type__label">
                   <input
@@ -124,7 +121,7 @@
                     name="document_type"
                     value="website"
                     required
-                  />
+                  >
                   <span
                     class="radio__label-container doc-type__label-container"
                   >
@@ -134,7 +131,7 @@
                       alt=""
                       width="30"
                       height="30"
-                    />
+                    >
                     <span class="doc-type__label-text">Website</span>
                   </span>
                 </label>
@@ -144,7 +141,7 @@
                     type="radio"
                     name="document_type"
                     value="document"
-                  />
+                  >
                   <span
                     class="radio__label-container doc-type__label-container"
                   >
@@ -154,7 +151,7 @@
                       alt=""
                       width="30"
                       height="30"
-                    />
+                    >
                     <span class="doc-type__label-text">Document</span>
                   </span>
                 </label>
@@ -164,7 +161,7 @@
                     type="radio"
                     name="document_type"
                     value="social"
-                  />
+                  >
                   <span
                     class="radio__label-container doc-type__label-container"
                   >
@@ -174,7 +171,7 @@
                       alt=""
                       width="30"
                       height="30"
-                    />
+                    >
                     <span class="doc-type__label-text">Social Account</span>
                   </span>
                 </label>
@@ -182,8 +179,8 @@
             </section>
             <section class="upload form__upload form__translate-step">
               <h2 class="form__title upload__title">
-                Upload your documents<em class="form__title-substring"
-                  >(Doc,Docx,Text,Pdf,Markdown)</em
+                Upload your documents<small class="form__title-substring"
+                  >(Doc, Docx, Text, Pdf, Markdown)</small
                 >
               </h2>
               <label class="upload__label">
@@ -193,7 +190,7 @@
                   class="upload__input-file visually-hidden"
                   accept=".doc,.docx,.txt,.pdf,.md"
                   multiple
-                />
+                >
                 <span class="upload__label-container">
                   <svg
                     class="icon icon--md upload__icon"
@@ -202,7 +199,7 @@
                   >
                     <use xlink:href="./assets/images/sprite.svg#upload"></use>
                   </svg>
-                  Upload a new file
+                  Upload a&nbsp;new file
                 </span>
               </label>
               <table class="table upload__table">
@@ -213,7 +210,7 @@
                     </th>
                     <th class="table__header">file size</th>
                     <th class="table__header table__data-words">
-                      number of words
+                      number&nbsp;of words
                     </th>
                     <th class="table__header table__data--center">remove</th>
                   </tr>
@@ -291,7 +288,7 @@
                 Chose your languages pairings
               </h2>
               <div class="language__select-field">
-                <label class="language__label" for="language-from">from</label>
+                <label class="language__label" for="language-from">From</label>
                 <select
                   class="select language__select"
                   name="from_language"
@@ -299,17 +296,17 @@
                   required
                 >
                   <option value="" selected disabled>Choose language</option>
-                  <option value="English">English</option>
-                  <option value="Hindi">Hindi</option>
-                  <option value="Italian">Italian</option>
-                  <option value="Ukrainian">Ukrainian</option>
-                  <option value="Arabic">Arabic</option>
-                  <option value="Kurdish">Kurdish</option>
+                  <option value="en">English</option>
+                  <option value="hi">Hindi</option>
+                  <option value="it">Italian</option>
+                  <option value="ua">Ukrainian</option>
+                  <option value="ar">Arabic</option>
+                  <option value="ku">Kurdish</option>
                 </select>
                 <label
                   class="language__label language__label--right-text"
                   for="language-to-1"
-                  >to</label
+                  >To</label
                 >
                 <select
                   class="select language__select"
@@ -318,12 +315,12 @@
                   required
                 >
                   <option value="" selected disabled>Choose language</option>
-                  <option value="English">English</option>
-                  <option value="Hindi">Hindi</option>
-                  <option value="Italian">Italian</option>
-                  <option value="Ukrainian">Ukrainian</option>
-                  <option value="Arabic">Arabic</option>
-                  <option value="Kurdish">Kurdish</option>
+                  <option value="en">English</option>
+                  <option value="hi">Hindi</option>
+                  <option value="it">Italian</option>
+                  <option value="ua">Ukrainian</option>
+                  <option value="ar">Arabic</option>
+                  <option value="ku">Kurdish</option>
                 </select>
               </div>
               <div class="language__add-section">
@@ -334,12 +331,12 @@
                     required
                   >
                     <option value="" selected disabled>Choose language</option>
-                    <option value="English">English</option>
-                    <option value="Hindi">Hindi</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Ukrainian">Ukrainian</option>
-                    <option value="Arabic">Arabic</option>
-                    <option value="Kurdish">Kurdish</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="it">Italian</option>
+                    <option value="ua">Ukrainian</option>
+                    <option value="ar">Arabic</option>
+                    <option value="ku">Kurdish</option>
                   </select>
                   <button
                     type="button"
@@ -363,7 +360,7 @@
                   >
                     <use xlink:href="./assets/images/sprite.svg#plus"></use>
                   </svg>
-                  ADD
+                  Add
                 </button>
               </div>
             </section>
@@ -380,7 +377,7 @@
                       name="tone"
                       value="friendly"
                       required
-                    />
+                    >
                     <span class="radio__label-container tone__label-container">
                       <svg
                         class="icon icon--md tone__icon-friendly"
@@ -398,7 +395,7 @@
                       type="radio"
                       name="tone"
                       value="corporate"
-                    />
+                    >
                     <span class="radio__label-container tone__label-container">
                       <svg
                         class="icon icon--md tone__icon-pro"
@@ -418,7 +415,7 @@
                       type="radio"
                       name="tone"
                       value="media"
-                    />
+                    >
                     <span class="radio__label-container tone__label-container">
                       <svg
                         class="icon icon--md tone__icon-media"
@@ -441,21 +438,21 @@
                     min="1"
                     max="3"
                     step="1"
-                  />
+                  >
                   <span class="range__value range__value--left"
-                    >i got time</span
+                    >I got time</span
                   >
                   <span
                     class="range__value range__value--center range__value--orange"
                   >
-                    average
+                    Average
                   </span>
                   <span class="range__value range__value--right"
-                    >yesterday</span
+                    >Yesterday</span
                   >
                 </div>
                 <aside class="help urgency__help">
-                  <h4 class="help__title">
+                  <h3 class="help__title">
                     <svg
                       class="icon icon--md icon--dark icon--absolute"
                       width="1.5em"
@@ -464,27 +461,31 @@
                       <use xlink:href="./assets/images/sprite.svg#info"></use>
                     </svg>
                     Timeline info
-                  </h4>
+                  </h3>
                   <p class="help__text">
-                    Width an
-                    <em class="help__text help__text--accent">AVERAGE</em>
-                    timeline set up, our expert translator can take a reasonable
-                    amount of time perfecting your translation
+                    Width an&nbsp;<em class="help__text help__text--accent"
+                      >AVERAGE</em
+                    >
+                    timeline set up, our expert translator can take
+                    a&nbsp;reasonable amount of time perfecting your
+                    translation.
                   </p>
                 </aside>
               </section>
             </div>
             <section class="payment form__payment form__translate-step">
-              <h2 class="form__title">Sign up and choose a payment method</h2>
+              <h2 class="form__title">
+                Sign&nbsp;up and choose a&nbsp;payment method
+              </h2>
               <p class="payment__text">
-                Already have an account width us?
-                <a class="link" href="#">Sign in.</a>
+                Already have an&nbsp;account width us?
+                <a class="link" href="#">Sign&nbsp;in.</a>
               </p>
               <fieldset class="payment__sign-up" name="sign-up">
                 <label
                   class="payment__input-text-label payment__input-text-label--block"
                 >
-                  <span class="payment__label-text">full name</span>
+                  <span class="payment__label-text">Full name</span>
                   <input
                     type="text"
                     name="full_name"
@@ -495,10 +496,10 @@
                     pattern="[a-zA-Z\s]{6,64}"
                     title="You can only use letters!Min:6"
                     required
-                  />
+                  >
                 </label>
                 <label class="payment__input-text-label">
-                  <span class="payment__label-text">email address</span>
+                  <span class="payment__label-text">Email address</span>
                   <input
                     type="email"
                     name="email"
@@ -507,10 +508,12 @@
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                     title="name@domain.etc"
                     required
-                  />
+                  >
                 </label>
                 <label class="payment__input-text-label">
-                  <span class="payment__label-text">choose a password</span>
+                  <span class="payment__label-text"
+                    >Choose a&nbsp;password</span
+                  >
                   <input
                     type="password"
                     class="payment__input-text payment__sign-up-input"
@@ -522,7 +525,7 @@
                      The password must have at least one capital letter.
                      Only letters and numbers are allowed."
                     required
-                  />
+                  >
                 </label>
               </fieldset>
               <div class="radio payment__radio">
@@ -533,15 +536,15 @@
                     name="document_type"
                     value="visa_master-card"
                     required
-                  />
-                  <span class="radio__label-container">
+                  >
+                  <span class="radio__label-container payment__label-container">
                     <img
                       class="payment__label-img"
                       src="assets/images/visa_master-card.png"
                       alt=""
                       width="40"
                       height="15"
-                    />
+                    >
                   </span>
                 </label>
                 <label class="radio__label payment__radio-label">
@@ -550,15 +553,15 @@
                     type="radio"
                     name="document_type"
                     value="paypal"
-                  />
-                  <span class="radio__label-container">
+                  >
+                  <span class="radio__label-container payment__label-container">
                     <img
                       class="payment__label-img"
                       src="assets/images/paypal.png"
                       alt=""
                       width="40"
                       height="15"
-                    />
+                    >
                   </span>
                 </label>
                 <label class="radio__label payment__radio-label">
@@ -567,21 +570,21 @@
                     type="radio"
                     name="document_type"
                     value="amazon"
-                  />
-                  <span class="radio__label-container">
+                  >
+                  <span class="radio__label-container payment__label-container">
                     <img
                       class="payment__label-img payment__label-img--corrected"
                       src="assets/images/amazon.png"
                       alt=""
                       width="40"
                       height="15"
-                    />
+                    >
                   </span>
                 </label>
               </div>
               <fieldset class="payment__card" name="card_data" disabled>
                 <label class="payment__input-text-label">
-                  <span class="payment__label-text">card number</span>
+                  <span class="payment__label-text">Card number</span>
                   <input
                     type="text"
                     inputmode="numeric"
@@ -593,10 +596,10 @@
                     pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}"
                     title="Enter the 16 digit number of your card in the format 'XXXX XXXX XXXX XXXX'"
                     required
-                  />
+                  >
                 </label>
                 <label class="payment__input-text-label">
-                  <span class="payment__label-text">expiry date</span>
+                  <span class="payment__label-text">Expiry date</span>
                   <input
                     type="text"
                     inputmode="numeric"
@@ -608,10 +611,10 @@
                     pattern="[0-9]{2}\/[0-9]{2}\/[0-9]"
                     title="Enter expiry date in the format 'DD/MM/YY'!"
                     required
-                  />
+                  >
                 </label>
                 <label class="payment__input-text-label">
-                  <span class="payment__label-text">code</span>
+                  <span class="payment__label-text">Code</span>
                   <input
                     type="text"
                     inputmode="numeric"
@@ -623,7 +626,7 @@
                     pattern="[0-9]{3}"
                     title="Enter the 3-digit secret code located on the back of the card"
                     required
-                  />
+                  >
                 </label>
               </fieldset>
             </section>
@@ -635,20 +638,20 @@
                     type="checkbox"
                     name="terms"
                     required
-                  />
+                  >
                   <span class="form__checkbox-label-text">I agree to the</span>
                 </label>
-                <a href="#" class="link"> Terms & Conditions</a>
+                <a href="#" class="link">Terms & Conditions</a>
               </div>
               <div class="form__button-group">
                 <button class="button form__button form__button--submit">
-                  place order
+                  Place order
                 </button>
                 <button
                   class="button form__button form__button--print"
                   type="button"
                 >
-                  print a quote
+                  Print a&nbsp;quote
                 </button>
               </div>
             </footer>
@@ -667,11 +670,11 @@
             >
               <use xlink:href="./assets/images/sprite.svg#like"></use>
             </svg>
-            what we do
+            What We do
           </p>
           <p class="footer__text footer__text--italic">
-            We provide a full range of language services including content
-            development, document, website and social media accounts
+            We provide a&nbsp;full range&nbsp;of language services including
+            content development, document, website and social media accounts
             translations.
           </p>
         </div>
@@ -684,17 +687,16 @@
             >
               <use xlink:href="./assets/images/sprite.svg#compass"></use>
             </svg>
-            our main office
+            Our main office
           </p>
           <address class="footer__address">
             <span>Dubai, UAE</span>
-            <span>P.O.Box: 502735</span>
+            <span>P.O.Box:&nbsp;502735</span>
             <span
-              >Phone:<a
+              >Phone:&nbsp;<a
                 class="link link--no-decor footer__link"
                 href="tel:+971(0)44278128"
-              >
-                +971 (0) 44278128</a
+                >+971&nbsp;(0)&nbsp;44278128</a
               ></span
             >
           </address>
@@ -708,7 +710,7 @@
             >
               <use xlink:href="./assets/images/sprite.svg#share"></use>
             </svg>
-            connect width us
+            Connect width us
           </p>
           <ul class="footer__list">
             <li class="footer__list-item">
@@ -731,14 +733,14 @@
             </li>
           </ul>
         </div>
-        <a href="#logo"
+        <a class="page__logo-link" href="#logo"
           ><img
-            src="assets/images/logo.png"
-            alt=""
             class="page__logo footer__logo"
+            src="assets/images/logo.png"
+            alt="logo"
             width="50"
             height="50"
-        /></a>
+        ></a>
       </div>
     </footer>
   </body>

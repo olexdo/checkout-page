@@ -77,7 +77,19 @@
   transition: all 100ms ease;
 }
 
-@media (min-width: 992px) {
+.language__add-button:focus {
+  outline: 2px solid var(--color-dark);
+  color: var(--color-light);
+  border-color: var(--color-light);
+  background-color: var(--color-dark);
+  transition: all 100ms ease;
+}
+
+.language__add-button:focus > .language__add-button-icon {
+  fill: var(--color-light);
+}
+
+@media (min-width: 430px) {
   .language__add-button:hover {
     color: var(--color-light);
     border-color: var(--color-light);

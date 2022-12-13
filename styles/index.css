@@ -3,31 +3,29 @@
 @import "./variables.css";
 
 /* Blocks */
-@import "blocks/visually-hidden.css";
-@import "blocks/icon.css";
-@import "./blocks/button.css";
-@import "./blocks/link.css";
-@import "./blocks/table.css";
-@import "blocks/radio.css";
-@import "./blocks/select.css";
-@import "blocks/range.css";
+@import "blocks/visually-hidden/visually-hidden.css";
+@import "blocks/icon/icon.css";
+@import "blocks/button/button.css";
+@import "blocks/link/link.css";
+@import "blocks/table/table.css";
+@import "blocks/radio/radio.css";
+@import "blocks/select/select.css";
+@import "blocks/range/range.css";
 
 /* Page */
-
-@import "./blocks/page-blocks/page.css";
-@import "./blocks/page-blocks/header.css";
+@import "page/page.css";
+@import "page/header/header.css";
+@import "page/footer/footer.css";
 
 /* Form */
-@import "./blocks/form-blocks/form.css";
-@import "./blocks/form-blocks/order.css";
-@import "./blocks/form-blocks/help.css";
-@import "./blocks/form-blocks/doc-type.css";
-@import "./blocks/form-blocks/upload.css";
-@import "./blocks/form-blocks/language.css";
-@import "blocks/form-blocks/tone.css";
-@import "blocks/form-blocks/urgency.css";
-@import "blocks/form-blocks/payment.css";
+@import "page/form/form.css";
+@import "page/form/order/order.css";
+@import "page/form/help/help.css";
+@import "page/form/doc-type/doc-type.css";
+@import "page/form/upload/upload.css";
+@import "page/form/language/language.css";
+@import "page/form/tone/tone.css";
+@import "page/form/urgency/urgency.css";
+@import "page/form/payment/payment.css";
 
-/* Page Footer */
 
-@import "./blocks/page-blocks/footer.css";

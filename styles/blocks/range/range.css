@@ -7,11 +7,14 @@
   width: 100%;
   margin: 0 0 0.3rem;
   padding: 0.7rem 0;
-  outline-color: var(--color-dark);
   appearance: none;
 }
 
-@media (min-width: 992px) {
+.range__input:focus{
+  outline: 2px solid var(--color-dark);
+}
+
+@media (min-width: 430px) {
   .range__input:hover::-webkit-slider-runnable-track {
     background-color: rgb(255 140 0 / 0.22);
   }

@@ -15,6 +15,7 @@
   margin: 0 0 clamp(25px, 4.5vw, 78px);
   border: none;
 }
+
 .payment__input-text-label {
   display: inline-flex;
   flex-direction: column;
@@ -80,6 +81,17 @@
   height: clamp(60px, 6.9vw, 120px);
 }
 
+.payment__label-container{
+  transition: background-color 100ms ease;
+}
+
+@media (min-width: 430px){
+  .payment__label-container:hover{
+    background-color: #d3d4dc;
+    transition: background-color 100ms ease;
+  }
+}
+
 .payment__label-img {
   width: max(40px, 50%);
   height: max(15px, 50%);
@@ -87,7 +99,6 @@
 
 .payment__label-img--corrected {
   transform: translateY(25%);
-  color: #1c7a06;
 }
 
 /* Card Fieldset */
